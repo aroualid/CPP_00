@@ -1,13 +1,13 @@
-//#include "PhoneBook.hpp"
+#include "PhoneBook.hpp"
 #include <iostream>
 #include <string>
 #include <cctype>
 
 int main(void) 
 {
+	PhoneBook a;
 	while (1)
 	{
-
 		std::string line;
 		std::cout << "What is your name? ";	
 		std::getline(std::cin, line);
