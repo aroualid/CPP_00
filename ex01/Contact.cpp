@@ -2,12 +2,12 @@
 
 Contact::Contact(void) : _first_name(""), _last_name(""), _nickname(""), _phone_number(""), _darkest_secret("")
 {
-	std::cout << "Constructor called" << std::endl;
+	std::cout << "Contact Constructor called" << std::endl;
 }
 
 Contact::~Contact(void)
 {
-	std::cout << "Destructor called" << std::endl;
+	std::cout << "Contact Destructor called" << std::endl;
 }
 
 std::string Contact::getFirstName(void) const{
