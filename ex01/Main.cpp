@@ -17,7 +17,10 @@ int main(void)
 			return (1);	
 		}
 		if (line.empty() == 1)
-			std::cout << "Line empty (function display help)" << std::endl;
+		{
+			std::cout << "Line empty" << std::endl;
+			displayHelp();
+		}
 		else if (line == "ADD")
 		{
 			if (a.addContact() == false)
@@ -28,10 +31,19 @@ int main(void)
 			a.displayContact();
 			//std::cout << "SEARCH (function display search menu)" << std::endl;
 		}
+		else if (line == "HELP")
+			displayHelp();
 		else if (line == "EXIT")
-			std::cout << "EXIT (function good exit)" << std::endl;
+		{
+			std::cout << "EXIT" << std::endl;
+			return (0);
+		}
 		else
-			std::cout << "'" << line <<  "' is not a valid input (display help)" << std::endl;
+		{
+			std::cout << "' " << line <<  " ', is not a valid input" << std::endl;
+			displayHelp();
+		}
 
 	}
 }
+

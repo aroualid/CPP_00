@@ -4,16 +4,19 @@
 #include <iomanip>
 #include "Contact.hpp"
 
+void displayHelp(void);
+
 class PhoneBook{
     public:
 	PhoneBook();
 	~PhoneBook();
 	bool addContact(void);
 	void displayContact(void);
-	//bool showContact(int index);
+	void displayLine(int index);	
 	private:
     Contact _contacts[8]; 
-	int index; 
+	int index;
+	int size;
 };
 
 #endif
